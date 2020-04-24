@@ -1,0 +1,8 @@
+# Name: Andy Yi
+# Date: 1/10/20
+# Title: Lab1 – task 
+# Description: This text describes all my obersvations. 
+
+1. vi <name.sh> allows me to create a vi file or access an existing file. I used sh <name.sh> in order to run it. You can write on the file using "i" when having opened the vi file, "esc" to exit, and use :w to save or :wq to save and quit. I copied over the code using a separate word document and not camino. 
+2. I copied over the original file by going into the right directory and then using cp. Then I changed the variable of user to that of mine. 
+3. I used "i" to edit the code. I changed the variables and some of the echo words. The area was changed to use the bc function in order to handle the pi value as it is a float number. I used "" to contain the values that will be calculated by the bc, and used echo to print it. The | is a pipe that sends the string to the function, bc and get its output. The `` allows for the line to be calculated and replaced by it's output. 
