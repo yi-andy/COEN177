@@ -1,0 +1,10 @@
+Lab 6: Setting up a Minix system image
+1. Set up VMware. Do setup vmware, minix-get-image, vmware &. 
+2. ifconfig to find the IP address of the VM
+3. Get into a ftp which is the middleman between the VM and your host machine using ftp <IP address>.
+4. Type root for username, and enter password.
+5. For this assignment, you want to change the VM startup message in main. cd into /usr/src/kernel. 
+6. Locate main, and use get main.c to copy main in VM to current location on host machine. 
+7. Exit ftp, and go to main.c on host machine, and edit according to your liking. 
+8. Save and go to ftp again, and repeat steps 3-5. When in /usr/src/kernel, use put main.c to copy from current location on host to current location in VM. 
+9. Go back to VMware, and type make world. Then type reboot. Finally, you can see the modifications in the intro message.
