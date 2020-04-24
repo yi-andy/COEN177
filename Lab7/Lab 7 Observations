@@ -1,0 +1,9 @@
+For Lab 7, I went through the entire process from last week to get the proc.c file. I modified the pick_proc function by adding a if/else statement: 
+	int randNum = rand()%100;
+	if (randNum <= 15) {
+		q = randNum%NR)SCHED_QUEUES;
+	}
+	else {
+		q = 0;
+	}
+This sets a random number to 0-99 and if it is less than 15, then it goes queue = to that random number <= 15. Else, it restarts going through the queues at queue 0. So, the entire process would take a very much longer time, as the program would start at queue 0 more times than not. When running the make world and reboot, it took the VM over 6 minutes to reboot. Then, when running time ls, it took 4.01 seconds in real time, compared to milliseconds with the unmodified version of the VM. So, the program is much slower with the scrambling of the order of queues. 
